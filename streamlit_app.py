@@ -4,8 +4,8 @@ import streamlit as st
 import requests
 from PIL import Image
 
-FASTAPI_URL = "http://localhost:8000/predict/" # local
-# FASTAPI_URL = "http://localhost:8000/predict/" # Render
+# FASTAPI_URL = "http://localhost:8000/predict/" # local
+FASTAPI_URL = "https://brain-st-fast.onrender.com/predict/" # Render
 
 st.title("脳画像分類アプリ")
 
