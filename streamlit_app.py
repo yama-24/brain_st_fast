@@ -18,6 +18,11 @@ if uploaded_file:
     # 予測の実行
     files = {"file": uploaded_file.getvalue()}
     response = requests.post(FASTAPI_URL, files=files)
+
+    # デバッグ用
+    print("Status code:", response.status_code)
+    print("Response content:\n", response.text)
+
     predicted_class_idx = response.json()["predicted_class_idx"]
 
     # 予測結果の表示
