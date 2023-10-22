@@ -22,7 +22,7 @@ def getName(label):
 st.sidebar.title("MRI脳画像から腫瘍を分類")
 st.sidebar.write('・腫瘍の種類：神経膠腫、髄膜腫、下垂体腫瘍、腫瘍なし')
 st.sidebar.write('・断面図：水平断、矢状断、冠状断')
-uploaded_file = st.sidebar.file_uploader("脳画像をアップロードしてください", type=["jpg", "jpeg", "png"])
+uploaded_file = st.sidebar.file_uploader("脳画像をアップロードしてください", type=["jpg", "jpeg"])
 
 # 画面表示
 if uploaded_file:
